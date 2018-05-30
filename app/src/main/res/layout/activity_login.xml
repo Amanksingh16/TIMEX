@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:alpha="140"
+    android:background="@drawable/h">
+
+
+    <EditText
+        android:id="@+id/user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="52dp"
+        android:background="@drawable/button2"
+        android:drawableLeft="@drawable/ic_person_black_24dp"
+        android:drawablePadding="5dp"
+        android:ems="10"
+        android:hint="Username"
+        android:inputType="textPersonName"
+        android:padding="12dp"
+        android:textColor="@android:color/white"
+        android:textSize="22dp"
+        android:textStyle="italic" />
+
+    <EditText
+        android:id="@+id/pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/user"
+        android:layout_below="@+id/user"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/button2"
+        android:drawableLeft="@drawable/ic_person_black_24dp"
+        android:drawablePadding="5dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:padding="12dp"
+        android:textColor="@android:color/white"
+        android:textSize="22dp"
+        android:textStyle="italic" />
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pass"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="41dp"
+        android:background="@drawable/button"
+        android:padding="15dp"
+        android:text="Login Here"
+        android:textColor="@android:color/black"
+        android:textSize="18dp"
+        android:textStyle="italic" />
+
+    <Button
+        android:id="@+id/signup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="96dp"
+        android:background="@android:color/holo_green_light"
+        android:padding="15dp"
+        android:text="SIGN UP FOR FREE"
+
+        android:textColor="@android:color/black"
+        android:textSize="18dp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="26dp"
+        android:text="TIMER LOGIN"
+        android:textColor="@android:color/background_light"
+        android:textSize="25dp"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/forgotpass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textView3"
+        android:layout_below="@+id/login"
+        android:layout_marginTop="26dp"
+        android:text="Forgot Password ?"
+        android:textColor="@android:color/background_light"
+        android:textSize="18sp"
+        android:textStyle="bold|italic" />
+
+</RelativeLayout>

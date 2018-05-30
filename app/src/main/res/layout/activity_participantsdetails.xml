@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img6"
+    tools:context="com.example.amansingh.timex.Participantsdetails">
+
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="17dp"
+        android:text="Participant Details"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/evenname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView10"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="25dp"
+        android:text="Event Name - "
+        android:textColor="@android:color/white"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/partname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/evenname"
+        android:layout_below="@+id/evenname"
+        android:layout_marginTop="8dp"
+        android:text="Participant Name - "
+        android:textColor="@android:color/white"
+        android:textStyle="bold|italic" />
+
+    <LinearLayout
+        android:id="@+id/items"
+        android:layout_below="@+id/partname"
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SLIDER TIMERS"
+            android:layout_marginLeft="35dp"
+            android:textColor="@android:color/holo_orange_light"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="STOPWATCH TIMERS"
+            android:layout_marginLeft="70dp"
+            android:textColor="@android:color/holo_orange_light"
+            android:textStyle="bold|italic" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/listview"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/items">
+
+        <ListView
+            android:id="@+id/sliderlistview"
+            android:layout_width="160dp"
+            android:layout_height="180dp"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/partname"
+            android:layout_margin="10dp"
+            android:layout_marginTop="13dp"
+            android:background="@android:color/holo_orange_light" />
+
+        <ListView
+            android:id="@+id/stopwatchlistview"
+            android:layout_width="160dp"
+            android:layout_height="180dp"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/sliderlistview"
+            android:layout_margin="10dp"
+            android:layout_marginTop="13dp"
+            android:background="@drawable/img2" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/listview"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <Button
+            android:id="@+id/usestop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:background="@drawable/button2"
+            android:padding="11dp"
+            android:text="Use Stop Watch" />
+
+        <Button
+            android:id="@+id/slideruse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:background="@drawable/button2"
+            android:padding="11dp"
+            android:text="Use Slider Timer" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/deletepart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button"
+        android:padding="10dp"
+        android:text="Delete this participant" />
+
+
+</RelativeLayout>

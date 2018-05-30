@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img2"
+    android:padding="10dp">
+
+    <SeekBar
+        android:id="@+id/timer_seekbar"
+        style="@android:style/Widget.Material.SeekBar.Discrete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView4"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="31dp"
+        android:max="3600"
+        tools:targetApi="n" />
+
+    <TextView
+        android:id="@+id/time_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/timer_seekbar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/button3"
+        android:paddingBottom="3dp"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:paddingTop="3dp"
+        android:text="00:00:00"
+        android:textColor="@android:color/black"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/start_stop_button"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_alignStart="@+id/timer_seekbar"
+        android:layout_below="@+id/time_text_view"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="79dp"
+        android:background="@drawable/button2"
+        android:text="Start"
+        android:textSize="20dp"
+        android:textStyle="italic" />
+
+    <Button
+        android:id="@+id/stop"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_alignTop="@+id/start_stop_button"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="2dp"
+        android:layout_toEndOf="@+id/start_stop_button"
+        android:background="@drawable/button"
+        android:text="Stop"
+        android:textSize="20dp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:text="SLIDER TIMER"
+        android:textSize="24sp"
+        android:textStyle="bold|italic" />
+
+
+</RelativeLayout>

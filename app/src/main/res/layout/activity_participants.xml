@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/button4"
+    android:backgroundTint="@android:color/holo_purple"
+    tools:context="com.example.amansingh.timex.Participants">
+
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="76dp"
+        android:layout_marginTop="17dp"
+        android:text="Event Participants"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        android:textStyle="bold|italic" />
+
+    <ListView
+        android:id="@+id/participants_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView9"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/button4" />
+</RelativeLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:paddingTop="75dp"
+    android:background="@drawable/img5"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/stopwatch_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="STOPWATCH MENU"
+        android:textColor="@android:color/background_light"
+        android:textSize="25dp"
+        android:textStyle="bold|italic" />
+
+    <Button
+        android:id="@+id/usestopwatch"
+        android:layout_width="140dp"
+        android:layout_height="130dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="25dp"
+        android:layout_marginTop="55dp"
+        android:background="@drawable/button4"
+        android:padding="15dp"
+        android:text="USE STOPWATCH"
+        android:textColor="@android:color/black"
+        android:textSize="18dp"
+        android:textStyle="italic" />
+
+    <Button
+        android:layout_marginTop="30dp"
+        android:id="@+id/liststopwatch"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="140dp"
+        android:layout_marginBottom="25dp"
+        android:layout_height="130dp"
+        android:padding="15dp"
+        android:textStyle="italic"
+        android:textSize="18dp"
+        android:background="@drawable/button4"
+        android:textColor="@android:color/black"
+        android:text="PREVIOUS STOPWATCH TIMERS"/>
+</LinearLayout>

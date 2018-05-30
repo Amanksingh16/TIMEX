@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    android:background="@drawable/img3"
+    tools:context="com.example.amansingh.timex.view_slidertimer">
+
+    <TextView
+        android:id="@+id/timername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="154dp"
+        android:text="Timer Name - "
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/timerslider"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/timername"
+        android:layout_below="@+id/timername"
+        android:layout_marginTop="50dp"
+        android:text="Timer Set - "
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/sliderdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/timerslider"
+        android:layout_below="@+id/timerslider"
+        android:layout_marginTop="55dp"
+        android:text="Slider Date - "
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:textStyle="bold|italic" />
+
+    <Button
+        android:id="@+id/deleteslider"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sliderdate"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/button3"
+        android:text="Delete" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:alpha="140"
+        app:srcCompat="@drawable/slider1" />
+
+</RelativeLayout>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img6"
+    tools:context="com.example.amansingh.timex.EventDetails">
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="77dp"
+        android:layout_marginTop="29dp"
+        android:text="Your Event Details"
+        android:textColor="@android:color/background_light"
+        android:textSize="24sp"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/eventdetailname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView8"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="49dp"
+        android:text="Event Name - "
+        android:textColor="@android:color/holo_blue_bright"
+        android:textSize="20sp"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/dateevent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/eventdetailname"
+        android:layout_below="@+id/eventdetailname"
+        android:layout_marginTop="42dp"
+        android:text="Date Of Event - "
+        android:textColor="@android:color/holo_blue_bright"
+        android:textSize="20sp"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/eventparticipants"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/dateevent"
+        android:layout_below="@+id/dateevent"
+        android:layout_marginTop="44dp"
+        android:text="Total Partcipants - "
+        android:textColor="@android:color/holo_blue_bright"
+        android:textSize="20sp"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/participated"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/eventparticipants"
+        android:layout_below="@+id/eventparticipants"
+        android:layout_marginTop="44dp"
+        android:text="Participated - "
+        android:textColor="@android:color/holo_blue_bright"
+        android:textSize="20sp"
+        android:textStyle="bold|italic" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/participated"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="5dp"
+        android:padding="8dp">
+
+        <Button
+            android:id="@+id/event_participants"
+            android:layout_width="165dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/button3"
+            android:padding="15dp"
+            android:text="Participants"
+            android:textColor="@android:color/black"
+            android:textSize="20dp"
+            android:textStyle="italic" />
+
+        <Button
+            android:id="@+id/deleteevent"
+            android:layout_width="165dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/button3"
+            android:padding="15dp"
+            android:text="Delete"
+            android:textColor="@android:color/black"
+            android:textSize="20dp"
+            android:textStyle="italic" />
+
+    </LinearLayout>
+
+</RelativeLayout>

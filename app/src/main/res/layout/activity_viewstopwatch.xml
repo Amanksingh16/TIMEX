@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img3"
+    tools:context="com.example.amansingh.timex.viewstopwatch">
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28dp"
+        android:text="STOPWATCH TIMER DETAILS"
+        android:textColor="@android:color/white"
+        android:textSize="23sp"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/stoptimername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView20"
+        android:layout_below="@+id/textView20"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="41dp"
+        android:text="Timer Name - "
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/timerstopwatch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/stoptimername"
+        android:layout_below="@+id/stoptimername"
+        android:layout_marginTop="35dp"
+        android:text="Timer Set - "
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/stopwatchdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/timerstopwatch"
+        android:layout_below="@+id/timerstopwatch"
+        android:layout_marginTop="33dp"
+        android:text="Stopwatch Date - "
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="bold|italic" />
+
+    <Button
+        android:id="@+id/deletestopwatch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/button3"
+        android:text="Delete" />
+
+    <ListView
+        android:id="@+id/liststoplaps"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/deletestopwatch"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="290dp"
+        android:background="@drawable/button2" />
+
+
+</RelativeLayout>
